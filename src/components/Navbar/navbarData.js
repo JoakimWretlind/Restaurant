@@ -8,7 +8,7 @@ export const navbarData = [
         path: "/menu"
     },
     {
-        title: "drinks",
-        path: "/drinks"
+        title: "bar & drinks",
+        path: "/baranddrinks"
     }
 ]

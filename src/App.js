@@ -1,7 +1,7 @@
 import { Route, Switch } from 'react-router-dom'
 import { mainTheme, GlobalStyle } from './globalStyle';
 import { ThemeProvider } from 'styled-components';
-import { Home } from './pages/index';
+import { Home, Menu, Bar } from './pages/index';
 
 function App() {
   return (
@@ -10,6 +10,8 @@ function App() {
         <GlobalStyle />
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/menu" exact component={Menu} />
+          <Route path="/baranddrinks" exact component={Bar} />
         </Switch>
       </ThemeProvider>
     </>

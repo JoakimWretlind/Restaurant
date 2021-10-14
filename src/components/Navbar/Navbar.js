@@ -7,9 +7,11 @@ const Navbar = () => {
             <NavUL>
                 {navbarData.map((item, index) => {
                     return (
-                        <div key={index}>
-                            <NavLI>{item.title}</NavLI>
-                        </div>
+                        <NavLI
+                            key={index}
+                            to={item.path}>
+                            {item.title}
+                        </NavLI>
                     )
                 })}
             </NavUL>
