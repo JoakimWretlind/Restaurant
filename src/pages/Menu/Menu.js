@@ -1,10 +1,19 @@
 import React from 'react'
+import Navbar from '../../components/Navbar/Navbar';
+import {
+    Section,
+    InnerSection,
+    MenuContainer
+} from './menu.style'
 
 const Menu = () => {
     return (
-        <div>
-            <h1>Menu</h1>
-        </div>
+        <Section>
+            <InnerSection>
+                <Navbar />
+                <MenuContainer></MenuContainer>
+            </InnerSection>
+        </Section>
     )
 }
 

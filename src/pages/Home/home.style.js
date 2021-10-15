@@ -46,6 +46,24 @@ export const P = styled.p`
     font-family: 'josefinXlight';
     color: ${props => props.theme.offWhite};
 `;
+export const BottomNav = styled.div`
+    position: absolute;
+    bottom: 0;
+    height: 12rem;
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem 0 3rem;
+    background: ${props => props.theme.pitchBlack};
+    z-index: 2;
+    li{
+        font-family: 'josefinThin';
+        color: ${props => props.theme.offWhite};
+        letter-spacing: .1rem;
+        font-size: 1.2rem;
+    }
+`;
 
 // MIDDLE PANE
 export const MidPane = styled.div`
@@ -73,6 +91,10 @@ export const MidPane = styled.div`
      background: rgba(0,0,0,.6);
     }
 `;
+
+export const HeaderContainer = styled.div`
+    display: flex;
+`
 
 export const MainHeader = styled.h1`
     text-transform: uppercase;
@@ -144,22 +166,5 @@ export const RightPane = styled.div`
     }
 `;
 
-export const BottomNav = styled.div`
-    position: absolute;
-    bottom: 0;
-    height: 12rem;
-    width: 70rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 3rem;
-    background: ${props => props.theme.pitchBlack};
-    z-index: 2;
-    li{
-        font-family: 'josefinThin';
-        color: ${props => props.theme.offWhite};
-        letter-spacing: .1rem;
-        font-size: 1.2rem;
-    }
-`;
+
 
